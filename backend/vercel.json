@@ -1,10 +1,16 @@
 {
   "version": 2,
   "name": "e-shop-tutorial",
-  "build": {
-    "use": "@vercel/node"
-  },
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
-    { "src": "/(.*)", "dest": "server.js" }
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
   ]
 }
