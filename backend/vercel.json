@@ -1,7 +1,7 @@
 {
     "version":2,
     "name":"e-shop-tutorial",
-    "buils":[
+    "build":[
         {"src":"server.js","use":"@vercel/node"}
     ],
     "routes":[
