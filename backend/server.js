@@ -20,7 +20,7 @@ connectDatabase();
 // create server
 const server = app.listen(process.env.PORT, () => {
   console.log(
-    `Server is running on http://localhost:${process.env.PORT}`
+    `Server is running on https://multivendorecomapp-rozen-cefl.vercel.app/${process.env.PORT}`
   );
 });
 
