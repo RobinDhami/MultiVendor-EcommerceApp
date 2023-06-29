@@ -44,7 +44,7 @@ router.post("/create-shop", upload.single("file"), async (req, res, next) => {
 
     const activationToken = createActivationToken(seller);
 
-    const activationUrl = `https://multivendorecomapp-rozen.vercel.app/seller/activation/${activationToken}`;
+    const activationUrl = `https://multivendorecomapp-rozen-cefl.vercel.app/seller/activation/${activationToken}`;
 
     try {
       await sendMail({
