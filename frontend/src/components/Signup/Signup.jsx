@@ -40,7 +40,7 @@ const Singup = () => {
         setAvatar();
       })
       .catch((error) => {
-        toast.error(error.response.data.message);
+        toast.error(error.response?.data.message || "An error occurred");
       });
   };
 
@@ -103,7 +103,7 @@ const Singup = () => {
               </label>
               <div className="mt-1 relative">
                 <input
-                  type={visible ? "text" : "password"}
+                  type={visible?"text" : "password"}
                   name="password"
                   autoComplete="current-password"
                   required
