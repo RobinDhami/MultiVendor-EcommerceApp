@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "../../styles/styles";
 import { useEffect } from "react";
+import Khalti from "./Khalti";
 import {
   CardNumberElement,
   CardCvcElement,
@@ -10,6 +11,7 @@ import {
   useElements,
 } from "@stripe/react-stripe-js";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+// import { EsewaSdk } from 'rn-all-nepal-payment';
 import { useSelector } from "react-redux";
 import axios from "axios";
 import { server } from "../../server";
@@ -333,7 +335,7 @@ const PaymentInfo = ({
             ) : null}
           </div>
           <h4 className="text-[18px] pl-2 font-[600] text-[#000000b1]">
-            Pay with Paypal
+            Pay with Pay Pal
           </h4>
         </div>
 
@@ -374,6 +376,8 @@ const PaymentInfo = ({
           </div>
         ) : null}
       </div>
+
+      <Khalti/>
 
       <br />
       {/* cash on delivery */}
